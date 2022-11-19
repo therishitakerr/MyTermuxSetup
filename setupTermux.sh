@@ -2,6 +2,7 @@
 
 mkdir /data/data/com.termux/files/home/scripts
 sed -i '/# allow-external-apps = true/c\allow-external-apps = true' /data/data/com.termux/files/home/.termux/termux.properties
+termux-setup-storage
 
 pkg upgrade -y
 pkg install mediainfo ffmpeg mpv vim wget -y
