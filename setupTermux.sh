@@ -1,6 +1,18 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 mkdir /data/data/com.termux/files/home/scripts
+
+git clone https://github.com/therishitakerr/Group-Songs-By-Album
+cp ./Group-Songs-By-Album/ArrangeMusic.sh /data/data/com.termux/files/home/scripts/
+
+git clone https://github.com/therishitakerr/Remove-Songs-by-Duration
+cp ./Remove-Songs-by-Duration/LessThanTwoMinutes.sh /data/data/com.termux/files/home/scripts/
+
+git clone https://github.com/therishitakerr/VideosWithESubs
+cp ./VideosWithESubs/script.sh /data/data/com.termux/files/home/scripts/
+
+chmod +x /data/data/com.termux/files/home/scripts/*
+
 sed -i '/# allow-external-apps = true/c\allow-external-apps = true' /data/data/com.termux/files/home/.termux/termux.properties
 termux-setup-storage
 
