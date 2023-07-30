@@ -17,7 +17,7 @@ sed -i '/# allow-external-apps = true/c\allow-external-apps = true' /data/data/c
 termux-setup-storage
 
 pkg upgrade -y
-pkg install atomicparsley attr man tealdeer mediainfo ffmpeg mpv vim wget python-pip -y
+pkg at termux-services install atomicparsley attr man tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh-sftp-server openssh -y
 pip install --upgrade yt-dlp
 
 echo 'HOMEDIR="/data/data/com.termux/files/home"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
@@ -28,4 +28,4 @@ echo 'alias video1080p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs 
 echo 'alias video720p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -f 'bestaudio+bestvideo[height=720]'"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias video480p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -f 'bestaudio+bestvideo[height=480]'"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
-echo 'alias example="f() { curl cheat.sh/$1; };f"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo 'alias example="f() { curl cheat.sh/"$1"; };f"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
