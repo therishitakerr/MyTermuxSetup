@@ -29,3 +29,5 @@ echo 'alias video720p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs -
 echo 'alias video480p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -f 'bestaudio+bestvideo[height=480]'"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias example="f() { curl cheat.sh/"$1"; };f"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo 'alias example="cheat"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo 'cheat() { clear && curl cheat.sh/"$1" ; }' >> /data/data/com.termux/files/usr/etc/bash.bashrc
