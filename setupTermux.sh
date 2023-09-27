@@ -17,7 +17,7 @@ sed -i '/# allow-external-apps = true/c\allow-external-apps = true' /data/data/c
 termux-setup-storage
 
 pkg upgrade -y
-pkg install at termux-services neofetch atomicparsley attr man tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh-sftp-server openssh -y
+pkg install at termux-services neofetch atomicparsley attr man tor tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh-sftp-server openssh -y
 pip install --upgrade yt-dlp
 
 echo 'HOMEDIR="/data/data/com.termux/files/home"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
@@ -31,3 +31,5 @@ echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x"' >> /data/d
 echo 'alias example="f() { curl cheat.sh/"$1"; };f"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias example="cheat"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'cheat() { clear && curl cheat.sh/"$1" ; }' >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo 'alias fromtor="yt-dlp --proxy socks5://localhost:9050"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo 'alias fromtorbrowser="yt-dlp --proxy socks5://localhost:9150"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
