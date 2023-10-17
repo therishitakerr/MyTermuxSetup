@@ -17,7 +17,7 @@ sed -i '/# allow-external-apps = true/c\allow-external-apps = true' /data/data/c
 termux-setup-storage
 
 pkg upgrade -y
-pkg install at termux-services neofetch atomicparsley attr man tor tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh-sftp-server openssh -y
+pkg install cronie tree at termux-services neofetch atomicparsley attr man tor tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh-sftp-server openssh -y
 pip install --upgrade yt-dlp
 
 echo 'HOMEDIR="/data/data/com.termux/files/home"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
