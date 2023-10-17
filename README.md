@@ -9,3 +9,8 @@ script to setup termux app
 ```
 pkg upgrade -y && pkg install git -y && git clone https://github.com/therishitakerr/MyTermuxSetup && chmod +x MyTermuxSetup/setupTermux.sh && ./MyTermuxSetup/setupTermux.sh
 ```
+3. after running above command exit and reopen app to enable following services: atd and crond
+
+```
+sv enable atd; sv enable crond
+```
