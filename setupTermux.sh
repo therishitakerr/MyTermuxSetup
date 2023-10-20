@@ -5,9 +5,9 @@ pkg install ncdu termux-api which cronie tree at termux-services neofetch atomic
 pip install --upgrade yt-dlp
 
 mkdir /data/data/com.termux/files/home/scripts
-wget -P /data/data/com.termux/files/home/scripts 'https://github.com/therishitakerr/VideosWithESubs/blob/main/VideosWithESubs.sh'
-wget -P /data/data/com.termux/files/home/scripts 'https://github.com/therishitakerr/Group-Songs-By-Album/blob/main/ArrangeMusic.sh'
-wget -P /data/data/com.termux/files/home/scripts 'https://github.com/therishitakerr/Remove-Songs-by-Duration/blob/main/LessThanTwoMinutes.sh'
+wget -P /data/data/com.termux/files/home/scripts 'https://raw.githubusercontent.com/therishitakerr/VideosWithESubs/main/VideosWithESubs.sh'
+wget -P /data/data/com.termux/files/home/scripts 'https://raw.githubusercontent.com/therishitakerr/Remove-Songs-by-Duration/main/LessThanTwoMinutes.sh'
+wget -P /data/data/com.termux/files/home/scripts 'https://raw.githubusercontent.com/therishitakerr/Group-Songs-By-Album/main/ArrangeMusic.sh'
 
 chmod +x /data/data/com.termux/files/home/scripts/*
 
