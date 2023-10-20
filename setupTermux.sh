@@ -9,7 +9,7 @@ git clone https://github.com/therishitakerr/Remove-Songs-by-Duration
 cp ./Remove-Songs-by-Duration/LessThanTwoMinutes.sh /data/data/com.termux/files/home/scripts/
 
 git clone https://github.com/therishitakerr/VideosWithESubs
-cp ./VideosWithESubs/script.sh /data/data/com.termux/files/home/scripts/
+cp ./VideosWithESubs/VideosWithESubs.sh /data/data/com.termux/files/home/scripts/
 
 chmod +x /data/data/com.termux/files/home/scripts/*
 
