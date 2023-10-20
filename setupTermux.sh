@@ -1,24 +1,18 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+pkg upgrade -y
+pkg install ncdu termux-api which cronie tree at termux-services neofetch atomicparsley attr man tor tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh-sftp-server openssh -y
+pip install --upgrade yt-dlp
+
 mkdir /data/data/com.termux/files/home/scripts
-
-git clone https://github.com/therishitakerr/Group-Songs-By-Album
-cp ./Group-Songs-By-Album/ArrangeMusic.sh /data/data/com.termux/files/home/scripts/
-
-git clone https://github.com/therishitakerr/Remove-Songs-by-Duration
-cp ./Remove-Songs-by-Duration/LessThanTwoMinutes.sh /data/data/com.termux/files/home/scripts/
-
-git clone https://github.com/therishitakerr/VideosWithESubs
-cp ./VideosWithESubs/VideosWithESubs.sh /data/data/com.termux/files/home/scripts/
+wget -P /data/data/com.termux/files/home/scripts 'https://github.com/therishitakerr/VideosWithESubs/blob/main/VideosWithESubs.sh'
+wget -P /data/data/com.termux/files/home/scripts 'https://github.com/therishitakerr/Group-Songs-By-Album/blob/main/ArrangeMusic.sh'
+wget -P /data/data/com.termux/files/home/scripts 'https://github.com/therishitakerr/Remove-Songs-by-Duration/blob/main/LessThanTwoMinutes.sh'
 
 chmod +x /data/data/com.termux/files/home/scripts/*
 
 sed -i '/# allow-external-apps = true/c\allow-external-apps = true' /data/data/com.termux/files/home/.termux/termux.properties
 termux-setup-storage
-
-pkg upgrade -y
-pkg install ncdu termux-api which cronie tree at termux-services neofetch atomicparsley attr man tor tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh-sftp-server openssh -y
-pip install --upgrade yt-dlp
 
 echo 'HOMEDIR="/data/data/com.termux/files/home"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias updateytdlp="pip install --upgrade yt-dlp"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
