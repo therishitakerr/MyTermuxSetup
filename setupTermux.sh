@@ -25,6 +25,6 @@ echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x"' >> /data/d
 echo 'alias example="f() { curl cheat.sh/"$1"; };f"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias example="cheat"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'cheat() { clear && curl cheat.sh/"$1" ; }' >> /data/data/com.termux/files/usr/etc/bash.bashrc
-echo 'alias fromtor="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050" -S res:720' >> /data/data/com.termux/files/usr/etc/bash.bashrc
+echo 'alias fromtor="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo 'alias fromtorbrowser="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9150 -S res:720"' >> /data/data/com.termux/files/usr/etc/bash.bashrc
 echo "alias torus='tor --ExitNodes "{us}"'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
