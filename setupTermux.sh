@@ -24,7 +24,6 @@ echo 'alias video720p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs -
 echo 'alias video480p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:480"' 
 echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x"' 
 echo 'alias fromtor="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720"' 
-echo 'alias torus="tor --ExitNodes "{us}"' 
 } >> /data/data/com.termux/files/usr/etc/bash.bashrc
 
 termux-setup-storage
