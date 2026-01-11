@@ -30,11 +30,11 @@ BASHRC="/data/data/com.termux/files/usr/etc/bash.bashrc"
   echo 'alias updateytdlp="pip install --upgrade yt-dlp"'
   echo 'alias gotodownloads="cd /data/data/com.termux/files/home/storage/downloads"'
   echo 'alias editalias="vim /data/data/com.termux/files/usr/etc/bash.bashrc"'
-  echo 'alias video1080p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:1080"'
-  echo 'alias video720p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:720"'
-  echo 'alias video480p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:480"'
-  echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x"'
-  echo 'alias fromtor="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720"'
+  echo 'alias video1080p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:1080" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias video720p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias video480p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:480" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias fromtor="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
 } >> "$BASHRC"
 
 # Setup storage
