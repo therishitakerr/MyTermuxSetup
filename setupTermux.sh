@@ -6,7 +6,7 @@ pkg upgrade -y
 pkg install -y ncdu termux-api which cronie tree termux-services neofetch atomicparsley attr man tor tealdeer mediainfo ffmpeg mpv vim wget python-pip megatools megacmd openssh
 
 # Upgrade yt-dlp
-pip3 install --upgrade yt-dlp
+pip install -U "yt-dlp[default]"
 
 # Create scripts directory and download scripts
 SCRIPT_DIR="/data/data/com.termux/files/home/scripts"
@@ -30,11 +30,11 @@ BASHRC="/data/data/com.termux/files/usr/etc/bash.bashrc"
   echo 'alias updateytdlp="pip install --upgrade yt-dlp"'
   echo 'alias gotodownloads="cd /data/data/com.termux/files/home/storage/downloads"'
   echo 'alias editalias="vim /data/data/com.termux/files/usr/etc/bash.bashrc"'
-  echo 'alias video1080p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:1080" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias video720p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias video480p="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:480" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias getaudio="yt-dlp -i --add-metadata --embed-thumbnail -x" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias fromtor="yt-dlp -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias video1080p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:1080" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias video720p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias video480p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:480" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias getaudio="yt-dlp -t sleep -i --add-metadata --embed-thumbnail -x" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias fromtor="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
 } >> "$BASHRC"
 
 # Setup storage
