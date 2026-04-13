@@ -30,11 +30,11 @@ BASHRC="/data/data/com.termux/files/usr/etc/bash.bashrc"
   echo 'alias updateytdlp="pip install --upgrade yt-dlp"'
   echo 'alias gotodownloads="cd /data/data/com.termux/files/home/storage/downloads"'
   echo 'alias editalias="vim /data/data/com.termux/files/usr/etc/bash.bashrc"'
-  echo 'alias video1080p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:1080" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias video720p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias video480p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:480" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias getaudio="yt-dlp -t sleep -i --add-metadata --embed-thumbnail -x" --download-archive downloaded.txt --no-overwrites --no-part'
-  echo 'alias fromtor="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720" --download-archive downloaded.txt --no-overwrites --no-part'
+  echo 'alias video1080p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:1080 --download-archive downloaded.txt --no-overwrites --no-part -t sleep"'
+  echo 'alias video720p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:720 --download-archive downloaded.txt --no-overwrites --no-part -t sleep"'
+  echo 'alias video480p="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all -S res:480 --download-archive downloaded.txt --no-overwrites --no-part -t sleep"'
+  echo 'alias getaudio="yt-dlp -t sleep -i --add-metadata --embed-thumbnail -x --download-archive downloaded.txt --no-overwrites --no-part -t sleep"'
+  echo 'alias fromtor="yt-dlp -t sleep -i --add-metadata --embed-thumbnail --embed-subs --sub-langs all --proxy socks5://localhost:9050 -S res:720 --download-archive downloaded.txt --no-overwrites --no-part -t sleep"'
 } >> "$BASHRC"
 
 # Setup storage
